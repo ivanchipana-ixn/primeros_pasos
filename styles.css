@@ -67,3 +67,58 @@ footer{
     text-align: center;
     padding: 15px;
 }
+
+.inicio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+.juegos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.manuales {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.contacto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+@media(max-width:600px){
+    .inicio{
+        flex-direction:column;
+    }
+}
+
+@media(max-width:600px){
+    .juegos{
+        flex-direction:column;
+    }
+}
+
+@media(max-width:600px){
+    .manuales{
+        flex-direction:column;
+    }
+}
+
+@media(max-width:600px){
+    .contacto{
+        flex-direction:column;
+    }
+}
