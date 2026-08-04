@@ -1,26 +1,51 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>CAFÉ EL TRIGAL</title>
-  </head>
-  <body>
-  <header>      
-    <h1 class="title">CAFÉ EL TRIGAL</h1>
-      <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#cafe">Nuestro café</a>
-        <a href="#contacto">Contacto</a>
-      </nav></header>
+<head>
+<title>CAFÉ EL TRIGAL</title>
+</head>
+<body>
+
+<header>      
+<h1 class="title">CAFÉ EL TRIGAL</h1>
+<nav>
+<a href="#inicio">Inicio</a>
+<a href="#cafe">Nuestro café</a>
+<a href="#contacto">Contacto</a>
+</nav>
+</header>
 
 <section id="cafe">
-    <h2>Nuestro café</h2>
-      <p>La cafetería de barrio donde preparamos bebidas calientes con mucho cariño.</p>
-    <ul>
-        <li>Café americano-Bs 12</li>
-        <li>Capuchino-Bs 18</li>
-        <li>Submarino-Bs 15</li>
-    </ul>
+<h2>Nuestro café</h2>
+<p>La cafetería de barrio donde preparamos bebidas calientes con mucho cariño.</p>
+<ul>
+<li>Café americano-Bs 12</li>
+<li>Capuchino-Bs 18</li>
+<li>Submarino-Bs 15</li>
+</ul>
 </section>
 
-  </body>
+<section id="contacto">
+<h2>Haz tu pedido</h2>
+<form>
+<label for="nombre">Nombre completo</label>
+<input type="text" id="nombre" required>
+<br>
+<label for="correo">Correo electrónico</label>
+<input type="email" id="correo" required>
+<br>
+<label for="pedido">Tu pedido</label>
+<textarea id="pedido"></textarea>
+</form>
+
+<button type="button" id="btn-confirmar">
+Confirmar pedido
+</button>
+<p id="mensaje" class="oculto"></p>
+</section>
+
+<footer>
+Parcial 1-Ivan Carlos Chipana Ramos-3 de agosto de 2026
+</footer>
+
+</body>
 </html>
