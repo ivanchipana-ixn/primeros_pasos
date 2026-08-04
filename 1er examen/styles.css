@@ -9,3 +9,29 @@ padding: 25px;
 font-family: Arial, Helvetica, sans-serif;
 font-size: 15px; 
 }
+
+nav a{
+color: white;
+text-decoration: none;
+margin: 20px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 15px;
+line-height: 0.5;
+}
+
+section{
+background:#A47148;
+margin: 50px;
+padding: 25px;
+border-radius: 20px;
+color:#3E9B94;
+}
+
+footer{
+background-color: #C9A27E;
+color: white;
+text-align: center;
+padding: 15px;
+}
+
+
