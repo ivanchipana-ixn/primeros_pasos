@@ -62,21 +62,24 @@
         </table>
     </section>
 
-    <section id="contacto">
-        <h2>Contáctanos</h2>
-        <form>
-            <label>Nombre:</label><br>
-            <input type="text"><br><br>
+<section id="contacto">
+    <h2>Contáctanos</h2>
 
-            <label>Correo:</label><br>
-            <input type="email"><br><br>
+    <form id="form-pedido">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre"><br><br>
 
-            <label>Mensaje:</label><br>
-            <textarea rows="4" cols="40"></textarea><br><br>
+        <label for="correo">Correo:</label><br>
+        <input type="email" id="correo"><br><br>
 
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" rows="4" cols="40"></textarea><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <p id="error-pedido"></p>
+</section>
     
     <section id="Modooscuro">
         <p>Este es un ejemplo de modo oscuro.</p>
