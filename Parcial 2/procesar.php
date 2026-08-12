@@ -1,0 +1,19 @@
+<?php
+echo "<h1>Pedido recibido en Heladería Doña Nieve</h1>";
+
+echo "<p>Nombre: " . $_POST["nombre"] . "</p>";
+echo "<p>Correo: " . $_POST["correo"] . "</p>";
+echo "<p>Sabores: " . $_POST["sabores"] . "</p>";
+
+$carta = [
+    "Cono simple - Bs 8",
+    "Copa doble - Bs 15",
+    "Litro para llevar - Bs 35"
+];
+
+echo "<h2>Carta de la heladería</h2>";
+foreach ($carta as $producto) {
+    echo "<p>" . $producto . "</p>";
+}
+echo "<p>Te atiende Ivan Carlos Chipana Ramos.</p>";
+?>
