@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Heladería Doña Niev</title>
+</head>
+<body>
+
+<header>      
+<h1 class="title">Heladería Doña Nieve</h1>
+</header>
+
+<section id="parrafo">
+<p>Bienvenidos a Heladería Doña Nieve, donde encontrarás deliciosos sabores de helado para disfrutar en cualquier momento.</p>
+</section>
+
+<main>
+<form id="form-helados" novalidate method="POST" action="procesar.php"> 
+<label for="nombre">Nombre completo</label> 
+<input type="text" id="nombre" name="nombre" required >
+<br><br>
+<label for="correo">Correo electrónico</label>
+<input type="email" id="correo" name="correo" required >
+<br><br>
+<label for="sabores">¿Qué sabores querés?</label>
+<textarea id="sabores" name="sabores" ></textarea>
+<br><br>
+<button type="submit">Enviar mi pedido</button>
+<p id="aviso-helados" class="aviso"></p>
+</form>
+</main>
+
+<footer> 
+<p>Parcial 2 - Ivan Carlos Chipana Ramos - 11 de agosto de 2026</p> 
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
