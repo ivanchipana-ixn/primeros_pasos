@@ -142,3 +142,21 @@ button {
 }
 
 }
+
+.error {
+    color: red;
+    font-weight: bold;
+    background-color: #ffe5e5;
+    border: 1px solid red;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.exito {
+    color: green;
+    font-weight: bold;
+    background-color: #e5ffe5;
+    border: 1px solid green;
+    padding: 10px;
+    margin-top: 10px;
+}
