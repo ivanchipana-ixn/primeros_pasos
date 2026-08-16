@@ -1,23 +1,24 @@
-header{
+header {
     background-color: #0C3B45;
     color: white;
     text-align: center;
     padding: 25px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
-    line-height: 0.5; 
-    
+    line-height: 1.5;
 }
 
 body {
     background-color: lightblue;
+    margin: 0;
 }
+
 h1 {
     color: #CFF0EA;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     font-size: 40px;
-    line-height: 0.5;    
+    line-height: 1.2;
 }
 
 h2 {
@@ -25,55 +26,50 @@ h2 {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
-    line-height: 1.5;    
+    line-height: 1.5;
 }
 
 h3 {
-    color: #FFFF center;
+    color: #FFFF00;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
-    line-height: 1.5;    
+    line-height: 1.5;
 }
 
 p {
-    font-size: 18px;
-    color:#3E9B94;
+    font-size: 15px;
+    color: #3E9B94;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    line-height: 1.5;  
-}
-
-nav a{
-    color: white;
-    text-decoration: none;
-    margin: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    line-height: 0.5;
-}
-
-section{
-    background: white;
-    margin: 50px;
-    padding: 25px;
-    border-radius: 20px;
-    color:#3E9B94;
-}
-
-footer{
-    background-color: #2c3e50;
-    color: white;
-    text-align: center;
-    padding: 15px;
+    line-height: 1.5;
 }
 
 nav {
     display: flex;
     gap: 24px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #CFF0EA;
+}
+
+section {
+    background: white;
+    margin: 50px;
+    padding: 25px;
+    border-radius: 20px;
+    color: #3E9B94;
 }
 
 .inicio {
@@ -83,6 +79,7 @@ nav {
     justify-content: center;
     padding: 20px;
 }
+
 .juegos {
     display: flex;
     flex-wrap: wrap;
@@ -107,31 +104,12 @@ nav {
     padding: 20px;
 }
 
-@media(max-width:600px){
-    .inicio{
-        flex-direction:column;
-    }
-}
-
-@media(max-width:600px){
-    .juegos{
-        flex-direction:column;
-    }
-}
-
-@media(max-width:600px){
-    .manuales{
-        flex-direction:column;
-    }
-}
-
-@media(max-width:600px){
-    .contacto{
-        flex-direction:column;
-    }
-
 .oscuro {
     background-color: #222;
+    color: white;
+}
+
+.oscuro p {
     color: white;
 }
 
@@ -139,8 +117,6 @@ button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-}
-
 }
 
 .error {
@@ -159,4 +135,37 @@ button {
     border: 1px solid green;
     padding: 10px;
     margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+
+    .inicio {
+        flex-direction: column;
+    }
+
+    .juegos {
+        flex-direction: column;
+    }
+
+    .manuales {
+        flex-direction: column;
+    }
+
+    .contacto {
+        flex-direction: column;
+    }
+
+    section {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
