@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mundo Juegos de Mesa</title>
+</head>
+
+<body>
+
+<header>
+    <h1 class="title">Mundo Juegos de Mesa</h1>
+</header>
+
+<section id="parrafo">
+    <p>
+        Bienvenidos al Mundo Juegos de Mesa, donde encontrarás diferentes
+        categorías de juegos de mesa para disfrutar con amigos y familia.
+        También puedes realizar pedidos de tus juegos favoritos.
+    </p>
+</section>
+
+<main>
+
+    <h2>Realiza tu pedido</h2>
+
+    <form id="form-juegos" novalidate method="POST" action="procesar.php">
+
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <br><br>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+
+
+        <br><br>
+
+        <label for="mensaje">Especificaciones del pedido:</label>
+        <textarea 
+            id="mensaje" 
+            name="mensaje" 
+            rows="4"
+            placeholder="Escribe alguna indicación para tu pedido..."
+        ></textarea>
+
+        <br><br>
+
+        <button type="submit">Realizar pedido</button>
+
+        <p id="aviso-juegos" class="aviso"></p>
+
+    </form>
+
+</main>
+
+<footer>
+    <p>
+        Mundo Juegos de Mesa - Ivan Carlos Chipana Ramos
+    </p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
