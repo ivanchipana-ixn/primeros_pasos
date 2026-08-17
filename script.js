@@ -33,3 +33,15 @@ formularioPedido.addEventListener("submit", function (event) {
     avisoPedido.classList.add("exito");
     formularioPedido.reset();
 });
+
+const botonModo = document.getElementById("botonModo");
+
+botonModo.addEventListener("click", function () {
+    document.body.classList.toggle("oscuro");
+
+    if (document.body.classList.contains("oscuro")) {
+        botonModo.textContent = "Cambiar a modo claro";
+    } else {
+        botonModo.textContent = "Cambiar a modo oscuro";
+    }
+});
