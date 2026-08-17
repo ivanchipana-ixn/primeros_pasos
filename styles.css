@@ -109,6 +109,23 @@ section {
     color: white;
 }
 
+body.oscuro section {
+    background-color: #333;
+    color: white;
+}
+
+body.oscuro h2 {
+    color: #CFF0EA;
+}
+
+body.oscuro p {
+    color: white;
+}
+
+body.oscuro footer {
+    background-color: #111;
+}
+
 .oscuro p {
     color: white;
 }
