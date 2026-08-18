@@ -20,4 +20,6 @@ if ($mensaje !== "") {
 
 echo "<p>Te atiende Ivan Carlos Chipana Ramos.</p>";
 
+echo '<p><a href="index.html">Volver a la página de inicio</a></p>';
+
 ?>

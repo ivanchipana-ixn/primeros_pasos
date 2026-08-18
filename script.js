@@ -5,34 +5,56 @@ const correo = document.querySelector("#correo");
 const mensaje = document.querySelector("#mensaje");
 
 formularioPedido.addEventListener("submit", function (event) {
-    event.preventDefault();
 
     avisoPedido.classList.remove("error", "exito");
 
     if (nombre.value.trim() === "") {
-        avisoPedido.textContent = "Falta tu nombre, caserito.";
+
+        event.preventDefault();
+
+        avisoPedido.textContent =
+            "Ingrese nombre completo, porfavor.";
+
         avisoPedido.classList.add("error");
+
         return;
     }
 
-    if (!correo.value.includes("@")) {
-        avisoPedido.textContent = "Ese correo no parece válido: le falta el @.";
+    if (correo.value.trim() === "") {
+
+        event.preventDefault();
+
+        avisoPedido.textContent =
+            "Ingrese su correo electronico para continuar.";
+
         avisoPedido.classList.add("error");
+
+        return;
+    }
+    if (!correo.value.includes("@")) {
+
+        event.preventDefault();
+
+        avisoPedido.textContent =
+            "Ese correo no parece válido: ingresa el correo correcto porfavor con @.";
+
+        avisoPedido.classList.add("error");
+
         return;
     }
 
     if (mensaje.value.trim() === "") {
-        avisoPedido.textContent = "Escribe un mensaje antes de enviar.";
+
+        event.preventDefault();
+
+        avisoPedido.textContent =
+            "Escribe un pedido antes de enviar.";
+
         avisoPedido.classList.add("error");
+
         return;
     }
-
-    avisoPedido.textContent =
-        "Pedido recibido, caserito. Te contactamos hoy.";
-
-    avisoPedido.classList.add("exito");
-    formularioPedido.reset();
-});
+}  )  ;
 
 const botonModo = document.getElementById("botonModo");
 
