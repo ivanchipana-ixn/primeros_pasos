@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo de los Juegos de Mesa</title>
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+</head>
+<body>
+<header>
+        <h1>Mundo de los Juegos de Mesa</h1>
+	<h2>Creado por: Ivan Carlos Chipana Ramos</h2>
+        <p>Descubre los mejores juegos para disfrutar con amigos y familia.</p>
+        <nav>
+            <a href="#inicio">Inicio</a> |
+            <a href="#juegos">Juegos</a> |
+            <a href="#manuales">Manuales</a> |
+            <a href="#tienda">Tienda</a> |
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+    
+<main>
+    <section id="inicio" class="inicio">
+    <h2>Bienvenido a tu pagina de ayuda para encontrar tu juego de mesa</h2>
+    <p>
+            En esta página encontrarás información sobre juegos de mesa,
+            recomendaciones y consejos para aprender a jugar y compartir
+            momentos divertidos con otras personas, y donde adquirir los juegos de mesa
+    </p>
+    </section>
+    
+    <section id="juegos" class="juegos">
+        <h2>Juegos Recomendados</h2>
+        <ul>
+            <li>Catan</li>
+            <li>Carcassone</li>
+            <li>Risk</li>
+            <li>Splendor</li>
+            <li>Exploding Kittens</li>
+        </ul>
+    </section>
+
+    <section id="manuales" class="manuales">
+        <h2>¿Qué encontrarás?</h2>
+        <table border="1">
+            <tr>
+                <th>Contenido</th>
+                <th>Descripción</th>
+            </tr>
+            <tr>
+                <td>Reglas</td>
+                <td>Explicación básica de cada juego.</td>
+            </tr>
+            <tr>
+                <td>Recomendaciones</td>
+                <td>Juegos según el número de jugadores.</td>
+            </tr>
+            <tr>
+                <td>Novedades</td>
+                <td>Últimos lanzamientos y noticias.</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="contacto" class="contacto">
+    <h2>Contáctanos</h2>
+
+    <form id="form-pedido" novalidate method="POST"
+      action="{{ route('pedido.procesar') }}">
+    @csrf
+
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <br><br>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <br><br>
+
+        <label for="mensaje">Especificaciones del pedido:</label>
+        <textarea 
+            id="mensaje" 
+            name="mensaje" 
+            rows="4"
+            placeholder="Escribe alguna indicación para tu pedido..."
+        ></textarea>
+
+        <br><br>
+
+        <button type="submit">Realizar pedido</button>
+
+        <p id="error-pedido" class="aviso"></p>
+
+    </form>
+
+    </section>
+    
+    <section id="Modooscuro">
+        <p>Este es un ejemplo de modo oscuro.</p>
+
+        <button id="botonModo">Cambiar modo</button>
+
+    </section>
+</main>
+
+<footer>
+        <p>&copy; 2026 Ivan Carlos Chipana Ramos - Mundo de los Juegos de Mesa</p>
+</footer>
+
+    <script src="{{ asset('js/script.js') }}"></script>
+    
+
+</body>
+<!-- Funciona todo bien hasta aqui -->
+</html>

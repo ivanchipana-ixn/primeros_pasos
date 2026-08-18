@@ -1,0 +1,188 @@
+header {
+    background-color: #0C3B45;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+body {
+    background-color: lightblue;
+    margin: 0;
+}
+
+h1 {
+    color: #CFF0EA;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    line-height: 1.2;
+}
+
+h2 {
+    color: #20666B;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+h3 {
+    color: #FFFF00;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+p {
+    font-size: 15px;
+    color: #3E9B94;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+nav {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #CFF0EA;
+}
+
+section {
+    background: white;
+    margin: 50px;
+    padding: 25px;
+    border-radius: 20px;
+    color: #3E9B94;
+}
+
+.inicio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.juegos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.manuales {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.contacto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.oscuro {
+    background-color: #222;
+    color: white;
+}
+
+body.oscuro section {
+    background-color: #333;
+    color: white;
+}
+
+body.oscuro h2 {
+    color: #CFF0EA;
+}
+
+body.oscuro p {
+    color: white;
+}
+
+body.oscuro footer {
+    background-color: #111;
+}
+
+.oscuro p {
+    color: white;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    background-color: #ffe5e5;
+    border: 1px solid red;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.exito {
+    color: green;
+    font-weight: bold;
+    background-color: #e5ffe5;
+    border: 1px solid green;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+
+    .inicio {
+        flex-direction: column;
+    }
+
+    .juegos {
+        flex-direction: column;
+    }
+
+    .manuales {
+        flex-direction: column;
+    }
+
+    .contacto {
+        flex-direction: column;
+    }
+
+    section {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
