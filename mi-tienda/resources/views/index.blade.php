@@ -93,8 +93,14 @@
         <button type="submit">Realizar pedido</button>
 
         <p id="error-pedido" class="aviso"></p>
-
+        
     </form>
+
+    <a href="{{ route('login') }}">
+    <button type="button">
+        Ver pedidos registrados
+    </button>
+    </a>
 
     </section>
     

@@ -14,7 +14,7 @@ formularioPedido.addEventListener("submit", function (event) {
         event.preventDefault();
 
         avisoPedido.textContent =
-            "Falta tu nombre, caserito.";
+            "Escriba su nombre completo porfavor.";
 
         avisoPedido.classList.add("error");
 
@@ -28,7 +28,7 @@ formularioPedido.addEventListener("submit", function (event) {
         event.preventDefault();
 
         avisoPedido.textContent =
-            "Ese correo no parece válido: le falta el @.";
+            "Ese correo no parece válido: escribe correctamente el correo o talve le falta el @.";
 
         avisoPedido.classList.add("error");
 
@@ -42,23 +42,13 @@ formularioPedido.addEventListener("submit", function (event) {
         event.preventDefault();
 
         avisoPedido.textContent =
-            "Escribe un mensaje antes de enviar.";
+            "Escriba los detalles del pedido antes de enviar.";
 
         avisoPedido.classList.add("error");
 
         return;
     }
 
-
-    /*
-     * Si llegamos aquí significa que
-     * JavaScript considera válido el formulario.
-     *
-     * NO usamos event.preventDefault().
-     *
-     * Por lo tanto el formulario continúa
-     * hacia Laravel.
-     */
 
 });
 
