@@ -4,14 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Iniciar sesión</title>
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
 </head>
 
 <body>
-
-    <h1>Iniciar sesión</h1>
-
+    <header>
+        <h1>Iniciar sesión</h1>
+    </header>
+<main>
+<section class="login">
+    
     <form method="POST" action="{{ route('login.procesar') }}">
 
         @csrf
@@ -62,10 +65,14 @@
 
     <br>
 
-    <a href="{{ url('/') }}">
-        Volver al inicio
-    </a>
+    <p>
+        <a href="{{ url('/') }}">
+            Volver al inicio
+        </a>
+    </p>
 
+    </section>
+</main>
 </body>
 
 </html>

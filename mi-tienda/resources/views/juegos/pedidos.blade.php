@@ -3,14 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
-
     <title>Pedidos registrados</title>
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
 </head>
 
 <body>
-
-    <h1>Pedidos registrados</h1>
-
+    <header>
+        <h1>Pedidos registrados</h1>
+    </header>
+<main>
+    <section class="registro">
+    
     <p>
         Bienvenido,
         <strong>{{ Auth::user()->name }}</strong>
@@ -92,6 +95,8 @@
         Volver al inicio
     </a>
 
+    </section>
+</main>
 </body>
 
 </html>

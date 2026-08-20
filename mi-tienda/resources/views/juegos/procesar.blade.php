@@ -3,13 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
-
     <title>Pedido recibido</title>
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
 </head>
 
 <body>
-
-    <h1>¡Pedido realizado correctamente!</h1>
+    <header>
+        <h1>¡Pedido realizado correctamente!</h1>
+    </header>
+<main>
+    <section class="contacto">
+    
 
     <h2>Datos del pedido</h2>
 
@@ -35,10 +39,28 @@
 
     <br>
 
-    <a href="{{ url('/') }}">
-        Volver al inicio
-    </a>
+    <p>
+        Te atiende Ivan Carlos Chipana Ramos.
+    </p>
 
+    <p>
+        <a href="{{ url('/') }}">
+            Volver al inicio
+        </a>
+    </p>
+
+    </section>
+
+</main>
+
+    <footer>
+
+    <p>
+        &copy; 2026 Ivan Carlos Chipana Ramos
+        - Mundo de los Juegos de Mesa
+    </p>
+
+    </footer>
 </body>
 
 </html>
